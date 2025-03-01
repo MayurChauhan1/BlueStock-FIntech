@@ -1,0 +1,115 @@
+/* Reset box sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container Styles */
+  .container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading and Paragraph */
+  h1 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #667eea;
+    outline: none;
+  }
+  
+  button {
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #556cd6;
+  }
+  
+  /* IPO List Styles */
+  .ipo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+  
+  .ipo-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .ipo-list li button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ipo-list li button:hover {
+    background: #c0392b;
+  }
+  
+  /* Fade-in animation for new items */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
