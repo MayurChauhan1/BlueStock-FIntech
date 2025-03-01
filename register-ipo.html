@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Upcoming IPO</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Font for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel: Add Upcoming IPO</h1>
+    <p>Welcome, Admin! Use this panel to add details of upcoming IPOs.</p>
+    
+    <div class="form-container">
+      <input type="text" id="company" placeholder="Company Name" />
+      <input type="text" id="price" placeholder="IPO Price" />
+      <input type="date" id="openDate" />
+      <button onclick="addIPO()">➕ Add IPO</button>
+    </div>
+    
+    <ul class="ipo-list" id="ipoList"></ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

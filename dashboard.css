@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Dashboard Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* IPO Cards */
+.card {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.active {
+    background: #007bff;
+}
+
+.upcoming {
+    background: #28a745;
+}
+
+.closed {
+    background: #ffc107;
+}
+
+/* Charts */
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.pie-chart {
+    width: 50%;
+    position: relative;
+}
+
+.pie-chart .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-chart .circle-container .small-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.pie-chart .open {
+    background: #007bff;
+    top: 10px;
+    left: 60px;
+}
+
+.pie-chart .closed {
+    background: #ffc107;
+    top: 110px;
+    left: 10px;
+}
+
+.pie-chart .upcoming {
+    background: #28a745;
+    top: 110px;
+    right: 10px;
+}
+
+.bar-chart {
+    width: 40%;
+}
